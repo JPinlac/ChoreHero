@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5EEEB22DEFC33CD98C911930DBE06064D0C11869",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5EEEB22DEFC33CD98C911930DBE06064D0C11869" : 0,
+    "3E3E68CBB4DF3F86D3403EB8F3C4CCACD9E387B5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8D02F7C7-0CDD-4DD6-A3BC-939F1778290A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5EEEB22DEFC33CD98C911930DBE06064D0C11869" : "ChoreHero\/",
+    "3E3E68CBB4DF3F86D3403EB8F3C4CCACD9E387B5" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ChoreHero",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ChoreHero.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:JPinlac\/apprenticeship-classwork.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E3E68CBB4DF3F86D3403EB8F3C4CCACD9E387B5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:JPinlac\/ChoreHero.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5EEEB22DEFC33CD98C911930DBE06064D0C11869"
+    }
+  ]
+}

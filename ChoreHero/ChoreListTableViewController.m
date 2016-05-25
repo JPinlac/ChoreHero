@@ -7,21 +7,53 @@
 //
 
 #import "ChoreListTableViewController.h"
-
+#import "ChoreItem.h"
+#import "AddChoreViewController.h"
 @interface ChoreListTableViewController ()
+
+@property NSMutableArray *choreArray;
 
 @end
 
 @implementation ChoreListTableViewController
 
+-(void)loadChores
+{
+    ChoreItem *chore1 = [[ChoreItem alloc] init];
+    ChoreItem *chore2 = [[ChoreItem alloc] init];
+    ChoreItem *chore3 = [[ChoreItem alloc] init];
+    
+    chore1.name = @"walk dog";
+    chore1.choreDescription = @"";
+    chore1.status = @"";
+    chore1.dueDate = [[NSDate alloc] init];
+    chore1.assignedTo = @"";
+    chore1.estimatedTimeToComplete = @0;
+    
+    chore2.name = @"due dishes";
+    chore2.choreDescription = @"";
+    chore2.status = @"";
+    chore2.dueDate = [[NSDate alloc] init];
+    chore2.assignedTo = @"";
+    chore2.estimatedTimeToComplete = @0;
+    
+    chore3.name = @"clean room";
+    chore3.choreDescription = @"";
+    chore3.status = @"";
+    chore3.dueDate = [[NSDate alloc] init];
+    chore3.assignedTo = @"";
+    chore3.estimatedTimeToComplete = @0;
+    
+    [self.choreArray addObject:chore1];
+    [self.choreArray addObject:chore2];
+    [self.choreArray addObject:chore3];
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.choreArray = [[NSMutableArray alloc] init];
+    [self loadChores];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +64,35 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [self.choreArray count];
 }
 
-/*
+-(IBAction)unwindToList:(UIStoryboardSegue *) segue
+{
+    AddChoreViewController *source = [segue sourceViewController];
+    ChoreItem *item = source.choreItem;
+    [self.choreArray addObject:item];
+    [self.tableView reloadData];
+}
+
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"listPrototypeCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    ChoreItem *choreItem = [self.choreArray objectAtIndex:indexPath.row];
+
+    cell.textLabel.text = choreItem.name;
+    
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

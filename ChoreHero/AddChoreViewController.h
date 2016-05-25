@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ChoreItem.h"
 @interface AddChoreViewController : UIViewController
+@property (strong, nonatomic) ChoreItem *choreItem;
 
 @end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		435B115B1CF5FB0C00E18FA3 /* AddChoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435B115A1CF5FB0C00E18FA3 /* AddChoreViewController.m */; };
 		435B115E1CF5FBB900E18FA3 /* ChoreListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435B115D1CF5FBB900E18FA3 /* ChoreListTableViewController.m */; };
+		435B11611CF6176600E18FA3 /* ChoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 435B11601CF6176600E18FA3 /* ChoreItem.m */; };
 		43B9514E1CF5F165009F9887 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B9514D1CF5F165009F9887 /* main.m */; };
 		43B951511CF5F165009F9887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B951501CF5F165009F9887 /* AppDelegate.m */; };
 		43B951541CF5F165009F9887 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B951531CF5F165009F9887 /* ViewController.m */; };
@@ -22,6 +23,8 @@
 		435B115A1CF5FB0C00E18FA3 /* AddChoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddChoreViewController.m; sourceTree = "<group>"; };
 		435B115C1CF5FBB900E18FA3 /* ChoreListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoreListTableViewController.h; sourceTree = "<group>"; };
 		435B115D1CF5FBB900E18FA3 /* ChoreListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoreListTableViewController.m; sourceTree = "<group>"; };
+		435B115F1CF6176600E18FA3 /* ChoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoreItem.h; sourceTree = "<group>"; };
+		435B11601CF6176600E18FA3 /* ChoreItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoreItem.m; sourceTree = "<group>"; };
 		43B951491CF5F165009F9887 /* ChoreHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChoreHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B9514D1CF5F165009F9887 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43B9514F1CF5F165009F9887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 				43B951521CF5F165009F9887 /* ViewController.h */,
 				43B951531CF5F165009F9887 /* ViewController.m */,
 				43B951551CF5F165009F9887 /* Main.storyboard */,
+				435B115F1CF6176600E18FA3 /* ChoreItem.h */,
+				435B11601CF6176600E18FA3 /* ChoreItem.m */,
 				435B115C1CF5FBB900E18FA3 /* ChoreListTableViewController.h */,
 				435B115D1CF5FBB900E18FA3 /* ChoreListTableViewController.m */,
 				435B11591CF5FB0C00E18FA3 /* AddChoreViewController.h */,
@@ -159,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435B11611CF6176600E18FA3 /* ChoreItem.m in Sources */,
 				435B115B1CF5FB0C00E18FA3 /* AddChoreViewController.m in Sources */,
 				43B951541CF5F165009F9887 /* ViewController.m in Sources */,
 				43B951511CF5F165009F9887 /* AppDelegate.m in Sources */,
