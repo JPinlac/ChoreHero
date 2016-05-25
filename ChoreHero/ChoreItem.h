@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ChoreItem : NSObject
+@interface ChoreItem : NSObject <NSCoding>
 
 
 @property NSString *name;
@@ -19,5 +19,7 @@
 @property NSDate *dueDate;
 @property NSString *assignedTo;
 @property NSNumber *estimatedTimeToComplete;
+
++ (NSString *)getArchiveURL;
 
 @end
