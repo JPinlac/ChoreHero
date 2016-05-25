@@ -53,7 +53,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.choreArray = [[NSMutableArray alloc] init];
-    [self loadChores];
+	
+	NSArray * storedChoreArray = [self loadStoredChores];
+	if([storedChoreArray count] > 0) {
+		self.choreArray = [storedChoreArray mutableCopy];
+	}
+	else {
+		[self loadChores];
+	}
 }
 
 - (void)didReceiveMemoryWarning {
@@ -78,6 +85,8 @@
     ChoreItem *item = source.choreItem;
     [self.choreArray addObject:item];
     [self.tableView reloadData];
+	
+	[self saveChores];
 }
 
 
@@ -91,6 +100,18 @@
     
     
     return cell;
+}
+
+-(void)saveChores {
+	BOOL isSuccessfulSave = [NSKeyedArchiver archiveRootObject:_choreArray toFile:[ChoreItem getArchiveURL]];
+	
+	if(isSuccessfulSave == NO) {
+		NSLog(@"failed to save chores.");
+	}
+}
+
+-(NSArray *)loadStoredChores {
+	return [NSKeyedUnarchiver unarchiveObjectWithFile:[ChoreItem getArchiveURL]];
 }
 
 
