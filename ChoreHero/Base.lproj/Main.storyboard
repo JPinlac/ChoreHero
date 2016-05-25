@@ -75,7 +75,7 @@
                     <navigationItem key="navigationItem" title="Chore Hero" id="gyB-rT-RoN">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="I04-cI-8uR">
                             <connections>
-                                <segue destination="mqt-Rz-3xU" kind="modal" modalTransitionStyle="partialCurl" id="zaf-ul-PWP"/>
+                                <segue destination="mqt-Rz-3xU" kind="modal" id="zaf-ul-PWP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
